@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selection Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>TechGadget Comparison</h1>
+
+        <!--Hero Section: height uses vh units-->
+        <div class="hero">
+            <div>
+                <h2>Find Your Perfect Device</h2>
+                <p>Compare features. Make the smart choice.</p>
+            </div>
+        </div>
+
+        <!--Grid:column widths use %-->
+        
+        <div class="grid">
+            <!--FIRST article: styled with article:first-of-type (gold border)-->
+            <article>
+                <h2>Standard Model</h2>
+               <!-- h2 + p: adjacent sibling combinator styles this discount notice -->
+                <p>Perfect for daily use.</p> 
+                <div>Perfect for daily use.</div>
+                <div class="price-tag">
+                    <!--.price-tag > span: child combinator styles only this direct span-->
+                    <span>$</span> 99
+                    <div>Includes free shipping</div> 
+                </div>
+                <button>Buy Now</button>
+            </article>
+
+             <!-- SECOND article: no gold border (not first-of-type) -->
+
+            <article>
+                <h2>Pro Model</h2>
+                <!-- h2 + p: also gets adjacent sibling styling -->
+                 <p>Most popular pick!</p>
+                <div>For the power users.</div>
+                <div class="price-tag">
+                    <span>$</span> 199
+                </div>
+                <button>Buy Now</button>
+            </article>
+        </div>
+
+         <h3>Key Features</h3>
+
+         <!-- :nth-child(even) highlights rows 2 and 4 -->
+
+        <ul class="features">
+            <li>OLED Display</li>          <!-- odd: white -->
+            <li>12-hour Battery</li>       <!-- even: highlighted -->
+            <li>Water Resistant</li>       <!-- odd: white -->
+            <li>5G Enabled</li>            <!-- even: highlighted -->
+        </ul>
+    </main>
+
+    <!-- footer a: descendant combinator styles all links inside footer -->
+    <footer>
+        <p>TechGadget Price Matrix &copy; 2025</p>
+        <p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+
+
+</body>
+</html>
