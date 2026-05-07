@@ -8,10 +8,10 @@ A CSS fundamentals project that styles a product comparison page using **combina
 
 ```
 techgadget-price-matrix/
-│
-├── index.html       # Main HTML file (starter code provided)
-├── style.css        # All CSS styling (the assignment deliverable)
-└── README.md        # This file
+
+* index.html       # Main HTML file (starter code provided)
+* style.css        # All CSS styling (the assignment deliverable)
+* README.md        # This file
 ```
 
 ---
